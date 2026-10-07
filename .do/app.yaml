@@ -1,0 +1,19 @@
+# App Platform spec for cardsynccore.com: a free static site, redeployed on
+# every push to main. Create with `doctl apps create --spec .do/app.yaml`;
+# apply later edits with `doctl apps update <app-id> --spec .do/app.yaml`.
+name: cardsynccore-site
+region: nyc
+static_sites:
+  - name: site
+    github:
+      repo: james-perry66/cardsynccore
+      branch: main
+      deploy_on_push: true
+    source_dir: /
+    index_document: index.html
+domains:
+  # DNS stays at GoDaddy: the apex uses App Platform's A records, www a CNAME.
+  - domain: cardsynccore.com
+    type: PRIMARY
+  - domain: www.cardsynccore.com
+    type: ALIAS
