@@ -14,7 +14,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css?v=2">
 </head>
 <body>
 <nav class="nav" id="nav">
@@ -58,6 +58,40 @@
       <h2>How a scan becomes a priced card</h2>
       <p class="lead">Recognition runs on our own models, so everyday scans cost nothing per card. A stronger AI model is there for the hard ones.</p>
     </div>
+
+    <div class="demo" id="scanDemo" role="img" aria-label="Animation of a scan: each card is recognised, its collector number read, its finish detected and its market price looked up, then it is added to inventory with one key press.">
+      <div class="demo-bar" aria-hidden="true">
+        <span class="demo-dots"><i></i><i></i><i></i></span>
+        <span class="demo-title">Bulk scan</span>
+        <span class="demo-total"><b id="dmCount">0</b> added · <b id="dmValue">$0.00</b></span>
+      </div>
+      <div class="demo-body" aria-hidden="true">
+        <div class="demo-scanner">
+          <div class="demo-tray">
+            <div class="demo-card" id="dmCard"><div class="dc-art"></div><div class="dc-line"></div><div class="dc-line short"></div></div>
+            <div class="demo-beam" id="dmBeam"></div>
+          </div>
+          <div class="demo-tray-label">Scanner</div>
+        </div>
+        <div class="demo-panel">
+          <ol class="demo-steps" id="dmSteps"><li>Recognise</li><li>Read number</li><li>Finish</li><li>Price</li></ol>
+          <div class="demo-match" id="dmMatch">
+            <div class="dm-name" id="dmName">&nbsp;</div>
+            <div class="dm-meta"><span id="dmSet">&nbsp;</span> <span class="dm-num" id="dmNum"></span></div>
+            <div class="dm-tags"><span class="dm-finish" id="dmFinish"></span><span class="dm-conf" id="dmConf"></span></div>
+            <div class="dm-foot">
+              <span class="dm-price">Market <b id="dmPrice">–</b></span>
+              <span class="dm-key"><kbd id="dmKey">Enter</kbd> accept · <kbd>1</kbd> <kbd>2</kbd> alternatives</span>
+            </div>
+          </div>
+          <div class="demo-added">
+            <div class="da-head">Added to inventory</div>
+            <ul id="dmList"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="grid g4 ai-steps" style="margin-top:36px">
       <div class="card"><h3>Recognise</h3><p>A vision model compares the scan with every catalogue image and finds the closest matches.</p></div>
       <div class="card"><h3>Read</h3><p>Text recognition reads the collector number, which tells apart reprints with identical artwork.</p></div>
@@ -153,5 +187,6 @@
     </div>
   </div>
 </footer>
+<script src="scan-demo.js" defer></script>
 </body>
 </html>
