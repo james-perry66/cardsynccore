@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CardSync Core: AI card recognition and inventory for card sellers</title>
+<meta name="description" content="CardSync Core identifies trading cards from a scan with its own AI recognition engine, prices them at market, and keeps one inventory in step with eBay, TCGplayer and Mana Pool.">
+<meta property="og:title" content="CardSync Core: AI card recognition and inventory for card sellers">
+<meta property="og:description" content="Scan a stack, know every card, sell it anywhere. One inventory with your real cost and profit.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://cardsynccore.com/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%232563eb'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-size='28' font-weight='700' fill='white' text-anchor='middle'%3ECS%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="nav" id="nav">
+  <div class="wrap">
+    <a href="./" class="logo"><span class="logo-mark">CS</span><span>Card<b>Sync</b> <i>Core</i></span></a>
+    <button class="menu-btn" type="button" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')">Menu</button>
+    <div class="nav-links">
+      <a href="features.html">Features</a>
+      <a href="#ai">AI recognition</a>
+      <a href="features.html#integrations">Integrations</a>
+    </div>
+    <div class="nav-cta">
+      <a class="btn btn-primary" href="mailto:jperry@cardsynccore.com?subject=CardSync%20Core">Get in touch</a>
+    </div>
+  </div>
+</nav>
+<main>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">AI card recognition + inventory</span>
+      <h1>Scan a stack. Know every card. Sell it anywhere.</h1>
+      <p class="lead">CardSync Core identifies trading cards from a scan with its own AI recognition engine, prices them at market, and keeps one inventory in step with eBay, TCGplayer and Mana Pool, with your real cost and profit on every sale.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary btn-lg" href="mailto:jperry@cardsynccore.com?subject=CardSync%20Core">Get in touch</a>
+        <a class="btn btn-ghost btn-lg" href="features.html">See how it works</a>
+      </div>
+      <p class="hero-note">In private development, and used every day in our own card shop.</p>
+    </div>
+    <div class="truth" aria-label="The CardSync Core inventory is the source of truth for every marketplace">
+      <div class="truth-core">CardSync Core inventory<small>quantity · cost · price · images</small></div>
+      <div class="truth-arrows">
+        <span>eBay</span><span>TCGplayer</span><span>Mana Pool</span><span>Card shows</span>
+      </div>
+      <p class="truth-caption">Marketplaces read from your inventory and report sales back to it. It is never the other way round.</p>
+    </div>
+  </div>
+</section>
+
+<section class="soft" id="ai">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow">AI at the core</span>
+      <h2>How a scan becomes a priced card</h2>
+      <p class="lead">Recognition runs on our own models, so everyday scans cost nothing per card. A stronger AI model is there for the hard ones.</p>
+    </div>
+    <div class="grid g4 ai-steps" style="margin-top:36px">
+      <div class="card"><h3>Recognise</h3><p>A vision model compares the scan with every catalogue image and finds the closest matches.</p></div>
+      <div class="card"><h3>Read</h3><p>Text recognition reads the collector number, which tells apart reprints with identical artwork.</p></div>
+      <div class="card"><h3>Finish</h3><p>A model trained on our own scans tells normal, holo and reverse holo apart from the photo.</p></div>
+      <div class="card"><h3>Second look</h3><p>When the engine isn't sure, a stronger AI model re-reads the card. You confirm with one key.</p></div>
+    </div>
+    <div class="grid g4" style="margin-top:22px">
+      <div class="card"><div class="stat">98.8%</div><p>of 483 real shop scans matched on the first try (Pokémon)</p></div>
+      <div class="card"><div class="stat">98.9%</div><p>finish detection on our original scans</p></div>
+      <div class="card"><div class="stat">~0.5 s</div><p>per card on an ordinary processor, no graphics card needed</p></div>
+      <div class="card"><div class="stat">1 key</div><p>to accept a match, or pick one of two alternatives</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow">Three inventories, one system</span>
+      <h2>Everything you own, priced and in one place</h2>
+      <p class="lead">A shared card catalogue does the heavy lifting, so each shop only records what is its own.</p>
+    </div>
+    <div class="grid g3" style="margin-top:36px">
+      <div class="card layer">
+        <h3>Card catalogue</h3>
+        <p>Every card and sealed product, with images, market prices and graded prices, kept up to date.</p>
+        <ul class="ticks"><li>Market and graded pricing</li><li>Images and set checklists</li><li>Cards and sealed product</li></ul>
+        <div class="who">Maintained by CardSync Core · shared by every shop</div>
+      </div>
+      <div class="card layer">
+        <h3>Shop inventory</h3>
+        <p>What you have for sale: quantity, condition, your cost, your price, and photos ready for listings.</p>
+        <ul class="ticks"><li>Weighted-average cost per card</li><li>Market and graded pricing</li><li>Scanned photos saved for listings</li></ul>
+        <div class="who">Yours · only your shop can see or change it</div>
+      </div>
+      <div class="card layer">
+        <h3>Personal collection</h3>
+        <p>The cards you are keeping. Track what you paid, what each set is worth, and the total value of the collection.</p>
+        <ul class="ticks"><li>Cost and current value</li><li>Set value and completion</li><li>Move cards to the shop when you sell</li></ul>
+        <div class="who">Yours · kept separate from shop stock</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="soft">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow">How a card moves through your shop</span>
+      <h2>From the buy counter to the mailbox</h2>
+    </div>
+    <div class="flow" style="margin-top:36px">
+      <div class="card"><h3>Buy</h3><p>Quote a collection at market price and record the purchase.</p></div>
+      <div class="card"><h3>Scan</h3><p>AI identifies every card; you set condition and cost.</p></div>
+      <div class="card"><h3>List</h3><p>Stock goes to eBay, TCGplayer and Mana Pool.</p></div>
+      <div class="card"><h3>Sell</h3><p>Online, in store or at a show. Stock updates everywhere.</p></div>
+      <div class="card"><h3>Ship</h3><p>Picklists, packing slips and postage labels.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="dark" id="integrations">
+  <div class="wrap center">
+    <span class="eyebrow">Integrations</span>
+    <h2>Works with the places you already sell</h2>
+    <p class="lead">Keep every channel in step with one inventory.</p>
+    <div class="logos"><span>eBay</span><span>TCGplayer</span><span>Mana Pool</span><span>Whatnot</span><span>EasyPost shipping</span><span>Barcode labels</span></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="cta-band">
+      <h2>Want to hear when shops can join?</h2>
+      <p class="lead" style="margin:0 auto 24px">CardSync Core is in private development. Send us a note and we'll let you know when it opens.</p>
+      <a class="btn btn-primary btn-lg" href="mailto:jperry@cardsynccore.com?subject=CardSync%20Core">Get in touch</a>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer>
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <a href="./" class="logo"><span class="logo-mark">CS</span><span>Card<b>Sync</b> <i>Core</i></span></a>
+        <p style="margin-top:14px;max-width:340px">AI card recognition and inventory for trading card sellers. One inventory, every marketplace.</p>
+      </div>
+      <div>
+        <h4>Product</h4>
+        <a href="features.html">Features</a>
+        <a href="#ai">AI recognition</a>
+        <a href="features.html#integrations">Integrations</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="mailto:jperry@cardsynccore.com?subject=CardSync%20Core">Contact</a>
+      </div>
+    </div>
+    <div class="legal">
+      <span>&copy; 2026 CardSync Core</span>
+      <span>Pokémon, Magic: The Gathering and other marks belong to their owners. CardSync Core is not affiliated with them.</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
