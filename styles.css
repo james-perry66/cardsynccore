@@ -28,7 +28,7 @@ p{margin:0 0 1em;color:var(--ink-2)}
 .nav{position:sticky;top:0;z-index:20;background:rgba(11,17,32,.85);backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
 .nav .wrap{display:flex;align-items:center;gap:28px;height:64px}
 .logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.2rem;color:var(--ink)}
-.logo-mark{width:34px;height:34px;border-radius:10px;background:var(--brand);display:grid;place-items:center;color:#fff;font-size:.95rem;box-shadow:0 0 0 1px rgba(255,255,255,.08),0 6px 18px rgba(59,130,246,.35)}
+.logo-mark{width:34px;height:34px;display:block}
 .logo b{color:var(--brand-text)}
 .logo i{font-style:normal;font-weight:600;color:var(--ink-3)}
 .nav-links{display:flex;gap:22px;margin-right:auto}
@@ -64,6 +64,7 @@ section{padding:88px 0}
 .hero{padding:96px 0 72px;background:radial-gradient(900px 420px at 15% 0%,rgba(59,130,246,.22),transparent 70%),radial-gradient(700px 380px at 90% 30%,rgba(79,70,229,.16),transparent 70%),var(--bg)}
 .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
 .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin:26px 0 14px}
+.hero-logo{display:block;width:100%;max-width:440px;height:auto;margin:0 0 18px -6px}
 .hero-note{font-size:.88rem;color:var(--ink-3)}
 .truth{background:var(--panel);border:1px solid var(--line-2);border-radius:18px;box-shadow:var(--shadow);padding:22px}
 .truth-core{background:var(--brand);color:#fff;border-radius:12px;padding:16px 18px;text-align:center;font-weight:700}
